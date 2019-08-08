@@ -2,9 +2,11 @@
 
 ## Introduction
 
-The Telegram (android) application can be protected with a passcode. This passcode is a 4 digit code. 
+The Telegram (android) application can be protected with a passcode. This passcode is always a 4 digit code. 
 
 This script allows one to bruteforce this passcode.
+
+This is tested till version 4.6.0
 
 
 ## Operating mode

@@ -2,22 +2,24 @@
 
 ## Introduction
 
-The Telegram (android) application can be protected with a passcode. This passcode is always a 4 digit code. 
+The Telegram-application on Android can be protected with a passcode. This passcode is always a 4 digit code. 
 
 This script allows one to bruteforce this passcode.
 
-This is tested till version 4.6.0
+This script is tested on:
+- Telegram version 4.6.0 (feb 2018)
+- Telegram version 5.10 (aug 2019)
 
 
 ## Operating mode
 
-The passcode is saved in a hashed form in a XML-file (see below). The hash method is sha256. 
+The passcode is saved in a hashed form in a XML-file (see below). The hash method is SHA256. 
 The hash is double salted: the same salt is placed before AND after the passcode. The passcode part is the string UTF-8 representation of the 4 digits. 
 
 
 ## Configuration file
 
-The file "shared_prefs/userconfig.xml" contains something like this :
+The file `/data/data/org.telegram.messenger/shared_prefs/userconfing.xml` contains something like this :
 
       <map>
         [...]
